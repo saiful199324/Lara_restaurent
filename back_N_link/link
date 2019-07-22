@@ -1,0 +1,166 @@
+composer create-project --prefer-dist laravel/laravel laravel
+
+composer create-project --prefer-dist laravel/laravel laravel_crm
+
+public->frontend->main.css (modify koresi)
+
+/* .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(1) .item
+{
+	background: url('../images/1.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(2) .item
+{
+	background: url('../images/2.jpg');
+	background-size: cover;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(3) .item
+{
+	background: url('../images/3.jpg');
+	background-size: cover;
+} */
+
+
+resources welcome
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                    center: new google.maps.LatLng(24.909439, 91.833800),
+                    zoom: 16,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.909439, 91.833800),
+                    title:"Mamma's Kitchen Restaurant"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+
+
+
+
+
+
+http://localhost/laravel/public/admin/dashboard
+
+molin.dupl.75@gmail.com
+
+01...........
+
+http://localhost/laravel/public/
+
+
+composer dump-autoload (if delete any thing)
+
+model with migration========
+
+sudo chown -R 777 /home/sim24/.composer
+
+php artisan make:model Slider -m
+
+php artisan make:model Category -m
+
+php artisan make:model Item -m
+
+php artisan migrate
+
+
+
+controller with resource into a folder
+php artisan make:controller admin/SliderController -r
+
+php artisan make:controller admin/CategoryController -r
+
+php artisan make:controller admin/ItemController -r
+
+php artisan make:controller admin/ContactController
+
+
+
+php artisan make:controller admin/ReservationController
+
+php artisan make:controller admin/ContactController
+
+controller without any folder
+
+php artisan make:controller ReservationController
+
+php artisan make:model Reservation -m
+
+php artisan make:controller ContactController
+
+php artisan make:model Contact -m
+
+
+route list
+
+php artisan route:list
+
+php artisan r:l
+
+
+
+
+how to import data
+
+https://datatables.net/examples/index
+
+
+then select bootstrap 3
+
+
+php artisan migrate:rollback
+
+php artisan migrate:refresh
+
+
+for toastr javascript
+
+composer require brian2694/laravel-toastr
+
+php artisan vendor:publish
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=_T8lun81ybU&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs
+
+https://www.youtube.com/watch?v=bL9UsHzhW08&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=3
+
+https://www.youtube.com/watch?v=ZEzg50YcBV8&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=5
+
+
+https://www.youtube.com/watch?v=KyJLPuJQI1U&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=8
+
+https://www.youtube.com/watch?v=Z7E6Yo2Sr7Y&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=11
+
+https://www.youtube.com/watch?v=Z7E6Yo2Sr7Y&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=11
+
+https://www.youtube.com/watch?v=Q6xxHVmC2Rk&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=13
+
+https://www.youtube.com/watch?v=Ns2HYZ2nrVk&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=15
+
+https://www.youtube.com/watch?v=Tt7oNtyCNJw&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=16
+
+https://www.youtube.com/watch?v=bWSWSfRT7kE&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=18
+
+https://www.youtube.com/watch?v=_0Z6nJZPMYY&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=21
+
+https://www.youtube.com/watch?v=oDTmxfcC_cI&list=PLcN-gIg7jTM4jenAEtp6lP5_6KiH5twGs&index=24

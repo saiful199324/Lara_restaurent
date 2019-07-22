@@ -1,0 +1,39 @@
+Project Name : Restaurent Management System
+
+Built in Laravel: 5.8
+
+name: laravel
+
+DB Name: laravel
+
+
+Tabel = sliders(title,sub title,Image)
+
+table = categories(name,slug)
+
+table = items(category_id,name,description,price,image)
+
+
+relation= categories->items
+
+	  Many(hasmany)-> One(belongsTo)
+
+laravel tinker check database connection
+
+php artisan tinker
+
+check the model 
+
+App\Category::find(1)
+
+App\Item::find(1)->category
+
+
+check the function into the model
+
+
+App\Category::find(1)->items
+
+
+
+
